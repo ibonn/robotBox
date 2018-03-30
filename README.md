@@ -25,7 +25,7 @@ robotBox is a 2D robot simulator for Windows
 
 # Support the author
 If you find this project useful, please consider supporting the author
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](paypal.me/Ibon558)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/Ibon558)
 
 ## License
 
