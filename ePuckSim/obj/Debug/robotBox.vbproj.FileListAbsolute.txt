@@ -10,3 +10,4 @@ C:\Users\ibonn\Documents\Projects\ePuckSim\2018\03\2018032900-robotBox_Beta\ePuc
 C:\Users\ibonn\Documents\Projects\ePuckSim\2018\03\2018032900-robotBox_Beta\ePuckSim\ePuckSim\obj\Debug\robotBox.exe
 C:\Users\ibonn\Documents\Projects\ePuckSim\2018\03\2018032900-robotBox_Beta\ePuckSim\ePuckSim\obj\Debug\robotBox.xml
 C:\Users\ibonn\Documents\Projects\ePuckSim\2018\03\2018032900-robotBox_Beta\ePuckSim\ePuckSim\obj\Debug\robotBox.pdb
+C:\Users\ibonn\Documents\Projects\ePuckSim\2018\03\2018032900-robotBox_Beta\ePuckSim\ePuckSim\obj\Debug\robotBox.vbprojResolveAssemblyReference.cache
