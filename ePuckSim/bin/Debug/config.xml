@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <config>
   <setting name="ffmpegPath">C:\ffmpeg-3.4-win64-static\bin\ffmpeg.exe</setting>
-  <setting name="language">es</setting>
+  <setting name="language">en</setting>
   <setting name="autoAdjustFrameRate">True</setting>
   <setting name="maxFrameRate">40</setting>
   <setting name="minFrameRate">1</setting>

@@ -7,7 +7,7 @@ robotBox is a 2D robot simulator for Windows
 * Create walls
 * Create paths
 * Save and load maps
-* Export simulations to video
+* Export simulations to video (requires ffmpeg)
 * Multiple languages
 
 ## Supported robots
