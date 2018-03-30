@@ -23,7 +23,7 @@ robotBox is a 2D robot simulator for Windows
 
 * .NET Framework 4.0 or higher
 
-# Support the author
+## Support the author
 If you find this project useful, please consider supporting the author
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/Ibon558)
 
