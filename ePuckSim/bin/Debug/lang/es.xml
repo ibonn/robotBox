@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lang name="Español" code="es">
+	<param name="file">Archivo</param>
+	<param name="new">Nuevo</param>
+	<param name="save">Guardar</param>
+	<param name="open">Abrir</param>
+	<param name="simulator">Simulador</param>
+	<param name="toggledebug">Habilitar/deshabilitar modo de depuración</param>
+	<param name="togglerobot">Habilitar/deshabilitar visor de robot</param>
+	<param name="about">Acerca de...</param>
+	<param name="settings">Ajustes</param>
+	<param name="port">Puerto</param>
+	<param name="start">Iniciar</param>
+	<param name="stop">Detener</param>
+	<param name="cursor">Cursor</param>
+	<param name="move">Mover</param>
+	<param name="rotate">Rotar</param>
+	<param name="wall">Dibujar pared</param>
+	<param name="path">Dibujar camino</param>
+	<param name="eraser">Borrador</param>
+	<param name="framerate">FPS</param>
+	<param name="aaframerate">Ajustar FPS automáticamente</param>
+	<param name="maxframerate">FPS máximos:</param>
+	<param name="minframerate">FPS mínimos:</param>
+	<param name="misc">Varios</param>
+	<param name="defport">Puerto por defecto:</param>
+	<param name="lang">Idioma:</param>
+	<param name="helptrans">¡Ayuda a traducir!</param>
+	<param name="gridsize">Tamaño de cuadrícula:</param>
+	<param name="robot">Robot</param>
+	<param name="startloc">Posición de inicio:</param>
+	<param name="angle">Ángulo:</param>
+	<param name="note">Nota: debes reiniciar el simulador para que los cambios surtan efecto</param>
+	<param name="accept">Aceptar</param>
+	<param name="cancel">Cancelar</param>
+	<param name="record">Grabar</param>
+	<param name="pauserecord">Pausar grabación</param>
+	<param name="resumerecord">Reanudar grabación</param>
+	<param name="stoprecording">Detener grabación</param>
+	<param name="export">Exportar vídeo</param>
+	<param name="exportmessage">Pulsa el botón de grabar para grabar un vídeo</param>
+	<param name="exportingvideo">Exportando vídeo... por favor espera</param>
+	<param name="videoexported">Vídeo exportado.</param>
+	<param name="ffmpeglocation">Ubicación de ffmpeg:</param>
+	<param name="browse">Examinar</param>
+</lang>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lang name="English" code="en">
+	<param name="file">File</param>
+	<param name="new">New</param>
+	<param name="save">Save</param>
+	<param name="open">Open</param>
+	<param name="simulator">Simulator</param>
+	<param name="toggledebug">Toggle debug mode</param>
+	<param name="togglerobot">Toggle robot viewer</param>
+	<param name="about">About</param>
+	<param name="settings">Settings</param>
+	<param name="port">Port</param>
+	<param name="start">Start</param>
+	<param name="stop">Stop</param>
+	<param name="cursor">Cursor</param>
+	<param name="move">Move</param>
+	<param name="rotate">Rotate</param>
+	<param name="wall">Draw wall</param>
+	<param name="path">Draw path</param>
+	<param name="eraser">Eraser</param>
+	<param name="framerate">Framerate</param>
+	<param name="aaframerate">Auto-adjust framerate</param>
+	<param name="maxframerate">Maximum framerate:</param>
+	<param name="minframerate">Minimum framerate:</param>
+	<param name="misc">Misc</param>
+	<param name="defport">Default port:</param>
+	<param name="lang">Language:</param>
+	<param name="helptrans">Help translating!</param>
+	<param name="gridsize">Grid size</param>
+	<param name="robot">Robot</param>
+	<param name="startloc">Start position:</param>
+	<param name="angle">Angle:</param>
+	<param name="note">Note: You must restart the simulator to apply the new settings</param>
+	<param name="accept">Accept</param>
+	<param name="cancel">Cancel</param>
+	<param name="record">Record</param>
+	<param name="pauserecord">Pause recording</param>
+	<param name="resumerecord">Resume recording</param>
+	<param name="stoprecording">Stop regording</param>
+	<param name="export">Export video</param>
+	<param name="exportmessage">Press the record button to record a video</param>
+	<param name="exportingvideo">Exporting video... Please wait</param>
+	<param name="videoexported">Video exported.</param>
+	<param name="ffmpeglocation">ffmpeg location:</param>
+	<param name="browse">Browse</param>
+</lang>

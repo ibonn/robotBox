@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lang name="Euskara" code="eu">
+	<param name="file">Fitxategia</param>
+	<param name="new">Berria</param>
+	<param name="save">Gorde</param>
+	<param name="open">Ireki</param>
+	<param name="simulator">Simulatzailea</param>
+	<param name="toggledebug">Arazte modua gaitu/ezgaitu</param>
+	<param name="togglerobot">Robot bisorea gaitu/ezgaitu</param>
+	<param name="about">Honi buruz</param>
+	<param name="settings">Ezarpenak</param>
+	<param name="port">Portua</param>
+	<param name="start">Hasi</param>
+	<param name="stop">Gelditu</param>
+	<param name="cursor">Curtsorea</param>
+	<param name="move">Mugitu</param>
+	<param name="rotate">Biratu</param>
+	<param name="wall">Pareta marraztu</param>
+	<param name="path">Bidea marraztu</param>
+	<param name="eraser">Borragoma</param>
+	<param name="framerate">FPS</param>
+	<param name="aaframerate">FPS-ak automatikoki egokitu</param>
+	<param name="maxframerate">FPS maximoak:</param>
+	<param name="minframerate">FPS minimoak:</param>
+	<param name="misc">Misc</param>
+	<param name="defport">Lehenetsitako portua:</param>
+	<param name="lang">Hizkuntza:</param>
+	<param name="helptrans">Itzulketan lagundu!</param>
+	<param name="gridsize">Sare tamaina:</param>
+	<param name="robot">Robot</param>
+	<param name="startloc">Hasiera posizioa:</param>
+	<param name="angle">Angelua:</param>
+	<param name="note">Oharra: simulagailua berrabiarazi behar duzu aldaketek eragina izan dezaten</param>
+	<param name="accept">Onartu</param>
+	<param name="cancel">Deuseztatu</param>
+	<param name="record">Grabatu</param>
+	<param name="pauserecord">Grabaketa pausatu</param>
+	<param name="resumerecord">Grabaketa jarraitu</param>
+	<param name="stoprecording">Grabaketa geldarazi</param>
+	<param name="export">Bideoa sortu</param>
+	<param name="exportmessage">Grabatu botoia sakatu bideo bat sortzeko</param>
+	<param name="exportingvideo">Bideoa sortzen... Itxaron mesedez</param>
+	<param name="videoexported">Bideoa sortu egin da.</param>
+	<param name="ffmpeglocation">ffmpeg-ren kokalekua:</param>
+	<param name="browse">Arakatu</param>
+</lang>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <setting name="ffmpegPath">C:\ffmpeg-3.4-win64-static\bin\ffmpeg.exe</setting>
+  <setting name="language">es</setting>
+  <setting name="autoAdjustFrameRate">True</setting>
+  <setting name="maxFrameRate">40</setting>
+  <setting name="minFrameRate">1</setting>
+  <setting name="frameRate">25</setting>
+  <setting name="defaultPort">15000</setting>
+  <setting name="gridSize">80</setting>
+  <setting name="startX">37</setting>
+  <setting name="startY">37</setting>
+  <setting name="startAngle">0</setting>
+</config>
