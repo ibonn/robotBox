@@ -1,0 +1,12 @@
+C:\Users\ibonn\Documents\Projects\ePuckSim\2018\03\2018032900-robotBox_Beta\ePuckSim\ePuckSim\bin\Debug\robotBox.exe.config
+C:\Users\ibonn\Documents\Projects\ePuckSim\2018\03\2018032900-robotBox_Beta\ePuckSim\ePuckSim\obj\Debug\robotBox.aboutForm.resources
+C:\Users\ibonn\Documents\Projects\ePuckSim\2018\03\2018032900-robotBox_Beta\ePuckSim\ePuckSim\obj\Debug\robotBox.mainForm.resources
+C:\Users\ibonn\Documents\Projects\ePuckSim\2018\03\2018032900-robotBox_Beta\ePuckSim\ePuckSim\obj\Debug\robotBox.settingsForm.resources
+C:\Users\ibonn\Documents\Projects\ePuckSim\2018\03\2018032900-robotBox_Beta\ePuckSim\ePuckSim\obj\Debug\robotBox.Resources.resources
+C:\Users\ibonn\Documents\Projects\ePuckSim\2018\03\2018032900-robotBox_Beta\ePuckSim\ePuckSim\obj\Debug\robotBox.vbproj.GenerateResource.Cache
+C:\Users\ibonn\Documents\Projects\ePuckSim\2018\03\2018032900-robotBox_Beta\ePuckSim\ePuckSim\bin\Debug\robotBox.exe
+C:\Users\ibonn\Documents\Projects\ePuckSim\2018\03\2018032900-robotBox_Beta\ePuckSim\ePuckSim\bin\Debug\robotBox.pdb
+C:\Users\ibonn\Documents\Projects\ePuckSim\2018\03\2018032900-robotBox_Beta\ePuckSim\ePuckSim\bin\Debug\robotBox.xml
+C:\Users\ibonn\Documents\Projects\ePuckSim\2018\03\2018032900-robotBox_Beta\ePuckSim\ePuckSim\obj\Debug\robotBox.exe
+C:\Users\ibonn\Documents\Projects\ePuckSim\2018\03\2018032900-robotBox_Beta\ePuckSim\ePuckSim\obj\Debug\robotBox.xml
+C:\Users\ibonn\Documents\Projects\ePuckSim\2018\03\2018032900-robotBox_Beta\ePuckSim\ePuckSim\obj\Debug\robotBox.pdb

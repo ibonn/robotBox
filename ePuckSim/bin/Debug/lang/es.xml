@@ -43,4 +43,6 @@
 	<param name="videoexported">Vídeo exportado.</param>
 	<param name="ffmpeglocation">Ubicación de ffmpeg:</param>
 	<param name="browse">Examinar</param>
+	<param name="overwritemsg">Una grabación ha comenzado pero no ha sido exportada. ¿Quieres sobreescribirla?</param>
+	<param name="overwritetitle">Sobreescribir grabación</param>
 </lang>

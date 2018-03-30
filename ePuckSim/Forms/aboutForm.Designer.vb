@@ -58,10 +58,11 @@ Partial Class aboutForm
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(252, 94)
         Me.TextBox1.TabIndex = 3
+        Me.TextBox1.Text = "https://github.com/ibonn/robotBox"
         '
         'logoImage
         '
-        Me.logoImage.Image = Global.ePuckSim.My.Resources.Resources.logo_text
+        Me.logoImage.Image = Global.robotBox.My.Resources.Resources.logo_text
         Me.logoImage.Location = New System.Drawing.Point(12, 12)
         Me.logoImage.Name = "logoImage"
         Me.logoImage.Size = New System.Drawing.Size(115, 115)

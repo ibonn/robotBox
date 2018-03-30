@@ -30,7 +30,6 @@ Partial Class mainForm
         Me.OpenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.simulatorMenu = New System.Windows.Forms.ToolStripSplitButton()
         Me.DebugModeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToggleRobotViewerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.separatorLine = New System.Windows.Forms.ToolStripSeparator()
         Me.SettingsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -51,7 +50,6 @@ Partial Class mainForm
         Me.statusLabel = New System.Windows.Forms.ToolStripStatusLabel()
         Me.recordToolbar = New System.Windows.Forms.ToolStrip()
         Me.recordButton = New System.Windows.Forms.ToolStripButton()
-        Me.playPauseRecordingButton = New System.Windows.Forms.ToolStripButton()
         Me.exportButton = New System.Windows.Forms.ToolStripButton()
         Me.exportProgressbar = New System.Windows.Forms.ToolStripProgressBar()
         Me.exportStatusLabel = New System.Windows.Forms.ToolStripLabel()
@@ -82,7 +80,7 @@ Partial Class mainForm
         '
         'NewToolStripMenuItem
         '
-        Me.NewToolStripMenuItem.Image = Global.ePuckSim.My.Resources.Resources.file_outline
+        Me.NewToolStripMenuItem.Image = Global.robotBox.My.Resources.Resources.file_outline
         Me.NewToolStripMenuItem.Name = "NewToolStripMenuItem"
         Me.NewToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.N), System.Windows.Forms.Keys)
         Me.NewToolStripMenuItem.Size = New System.Drawing.Size(146, 22)
@@ -90,7 +88,7 @@ Partial Class mainForm
         '
         'SaveToolStripMenuItem
         '
-        Me.SaveToolStripMenuItem.Image = Global.ePuckSim.My.Resources.Resources.content_save
+        Me.SaveToolStripMenuItem.Image = Global.robotBox.My.Resources.Resources.content_save
         Me.SaveToolStripMenuItem.Name = "SaveToolStripMenuItem"
         Me.SaveToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.S), System.Windows.Forms.Keys)
         Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(146, 22)
@@ -98,7 +96,7 @@ Partial Class mainForm
         '
         'OpenToolStripMenuItem
         '
-        Me.OpenToolStripMenuItem.Image = Global.ePuckSim.My.Resources.Resources.open_in_app
+        Me.OpenToolStripMenuItem.Image = Global.robotBox.My.Resources.Resources.open_in_app
         Me.OpenToolStripMenuItem.Name = "OpenToolStripMenuItem"
         Me.OpenToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.O), System.Windows.Forms.Keys)
         Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(146, 22)
@@ -107,7 +105,7 @@ Partial Class mainForm
         'simulatorMenu
         '
         Me.simulatorMenu.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
-        Me.simulatorMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.DebugModeToolStripMenuItem, Me.ToggleRobotViewerToolStripMenuItem, Me.separatorLine, Me.SettingsToolStripMenuItem, Me.AboutToolStripMenuItem})
+        Me.simulatorMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.DebugModeToolStripMenuItem, Me.separatorLine, Me.SettingsToolStripMenuItem, Me.AboutToolStripMenuItem})
         Me.simulatorMenu.Image = CType(resources.GetObject("simulatorMenu.Image"), System.Drawing.Image)
         Me.simulatorMenu.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.simulatorMenu.Name = "simulatorMenu"
@@ -116,19 +114,11 @@ Partial Class mainForm
         '
         'DebugModeToolStripMenuItem
         '
-        Me.DebugModeToolStripMenuItem.Image = Global.ePuckSim.My.Resources.Resources.bug
+        Me.DebugModeToolStripMenuItem.Image = Global.robotBox.My.Resources.Resources.bug
         Me.DebugModeToolStripMenuItem.Name = "DebugModeToolStripMenuItem"
         Me.DebugModeToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F3
         Me.DebugModeToolStripMenuItem.Size = New System.Drawing.Size(200, 22)
         Me.DebugModeToolStripMenuItem.Text = "Toggle debug mode"
-        '
-        'ToggleRobotViewerToolStripMenuItem
-        '
-        Me.ToggleRobotViewerToolStripMenuItem.Image = Global.ePuckSim.My.Resources.Resources.robot
-        Me.ToggleRobotViewerToolStripMenuItem.Name = "ToggleRobotViewerToolStripMenuItem"
-        Me.ToggleRobotViewerToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F1
-        Me.ToggleRobotViewerToolStripMenuItem.Size = New System.Drawing.Size(200, 22)
-        Me.ToggleRobotViewerToolStripMenuItem.Text = "Toggle robot viewer"
         '
         'separatorLine
         '
@@ -137,14 +127,14 @@ Partial Class mainForm
         '
         'SettingsToolStripMenuItem
         '
-        Me.SettingsToolStripMenuItem.Image = Global.ePuckSim.My.Resources.Resources.settings
+        Me.SettingsToolStripMenuItem.Image = Global.robotBox.My.Resources.Resources.settings
         Me.SettingsToolStripMenuItem.Name = "SettingsToolStripMenuItem"
         Me.SettingsToolStripMenuItem.Size = New System.Drawing.Size(200, 22)
         Me.SettingsToolStripMenuItem.Text = "Settings"
         '
         'AboutToolStripMenuItem
         '
-        Me.AboutToolStripMenuItem.Image = Global.ePuckSim.My.Resources.Resources.account
+        Me.AboutToolStripMenuItem.Image = Global.robotBox.My.Resources.Resources.account
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
         Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(200, 22)
         Me.AboutToolStripMenuItem.Text = "About"
@@ -186,7 +176,7 @@ Partial Class mainForm
         Me.cursorTool.Checked = True
         Me.cursorTool.CheckState = System.Windows.Forms.CheckState.Checked
         Me.cursorTool.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.cursorTool.Image = Global.ePuckSim.My.Resources.Resources.cursor_default_outline
+        Me.cursorTool.Image = Global.robotBox.My.Resources.Resources.cursor_default_outline
         Me.cursorTool.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.cursorTool.Name = "cursorTool"
         Me.cursorTool.Padding = New System.Windows.Forms.Padding(5)
@@ -196,7 +186,7 @@ Partial Class mainForm
         'moveTool
         '
         Me.moveTool.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.moveTool.Image = Global.ePuckSim.My.Resources.Resources.cursor_move
+        Me.moveTool.Image = Global.robotBox.My.Resources.Resources.cursor_move
         Me.moveTool.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.moveTool.Name = "moveTool"
         Me.moveTool.Padding = New System.Windows.Forms.Padding(5)
@@ -206,7 +196,7 @@ Partial Class mainForm
         'rotateTool
         '
         Me.rotateTool.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.rotateTool.Image = Global.ePuckSim.My.Resources.Resources.rotate_3d
+        Me.rotateTool.Image = Global.robotBox.My.Resources.Resources.rotate_3d
         Me.rotateTool.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.rotateTool.Name = "rotateTool"
         Me.rotateTool.Padding = New System.Windows.Forms.Padding(5)
@@ -226,7 +216,7 @@ Partial Class mainForm
         'pathTool
         '
         Me.pathTool.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.pathTool.Image = Global.ePuckSim.My.Resources.Resources.road
+        Me.pathTool.Image = Global.robotBox.My.Resources.Resources.road
         Me.pathTool.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.pathTool.Name = "pathTool"
         Me.pathTool.Padding = New System.Windows.Forms.Padding(5)
@@ -236,7 +226,7 @@ Partial Class mainForm
         'eraserTool
         '
         Me.eraserTool.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.eraserTool.Image = Global.ePuckSim.My.Resources.Resources.eraser
+        Me.eraserTool.Image = Global.robotBox.My.Resources.Resources.eraser
         Me.eraserTool.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.eraserTool.Name = "eraserTool"
         Me.eraserTool.Padding = New System.Windows.Forms.Padding(5)
@@ -279,7 +269,7 @@ Partial Class mainForm
         '
         'recordToolbar
         '
-        Me.recordToolbar.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.recordButton, Me.playPauseRecordingButton, Me.exportButton, Me.exportProgressbar, Me.exportStatusLabel})
+        Me.recordToolbar.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.recordButton, Me.exportButton, Me.exportProgressbar, Me.exportStatusLabel})
         Me.recordToolbar.Location = New System.Drawing.Point(0, 58)
         Me.recordToolbar.Name = "recordToolbar"
         Me.recordToolbar.Size = New System.Drawing.Size(875, 25)
@@ -289,26 +279,16 @@ Partial Class mainForm
         'recordButton
         '
         Me.recordButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.recordButton.Image = Global.ePuckSim.My.Resources.Resources.record
+        Me.recordButton.Image = Global.robotBox.My.Resources.Resources.record
         Me.recordButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.recordButton.Name = "recordButton"
         Me.recordButton.Size = New System.Drawing.Size(23, 22)
         Me.recordButton.Text = "Record"
         '
-        'playPauseRecordingButton
-        '
-        Me.playPauseRecordingButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.playPauseRecordingButton.Image = Global.ePuckSim.My.Resources.Resources.pause
-        Me.playPauseRecordingButton.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.playPauseRecordingButton.Name = "playPauseRecordingButton"
-        Me.playPauseRecordingButton.Size = New System.Drawing.Size(23, 22)
-        Me.playPauseRecordingButton.Text = "Pause recording"
-        Me.playPauseRecordingButton.Visible = False
-        '
         'exportButton
         '
         Me.exportButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.exportButton.Image = Global.ePuckSim.My.Resources.Resources.file_video
+        Me.exportButton.Image = Global.robotBox.My.Resources.Resources.file_video
         Me.exportButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.exportButton.Name = "exportButton"
         Me.exportButton.Size = New System.Drawing.Size(23, 22)
@@ -369,7 +349,6 @@ Partial Class mainForm
     Friend WithEvents SettingsToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AboutToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents DebugModeToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ToggleRobotViewerToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents separatorLine As ToolStripSeparator
     Friend WithEvents saveMapDialog As SaveFileDialog
     Friend WithEvents openMapDialog As OpenFileDialog
@@ -383,5 +362,4 @@ Partial Class mainForm
     Friend WithEvents exportButton As ToolStripButton
     Friend WithEvents exportProgressbar As ToolStripProgressBar
     Friend WithEvents exportStatusLabel As ToolStripLabel
-    Friend WithEvents playPauseRecordingButton As ToolStripButton
 End Class

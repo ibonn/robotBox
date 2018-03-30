@@ -2,45 +2,45 @@
 <doc>
 <assembly>
 <name>
-ePuckSim
+robotBox
 </name>
 </assembly>
 <members>
-<member name="P:ePuckSim.Simulator.name">
+<member name="P:robotBox.Simulator.name">
  <summary>
  Product name
  </summary>
  <returns>String containing the name</returns>
 </member>
-<member name="P:ePuckSim.Simulator.version">
+<member name="P:robotBox.Simulator.version">
  <summary>
  Product version
  </summary>
  <returns>String containing the version and build</returns>
 </member>
-<member name="M:ePuckSim.Simulator.#ctor(ePuckSim.Simulator.simulatorSettings)">
+<member name="M:robotBox.Simulator.#ctor(robotBox.Simulator.simulatorSettings)">
  <summary>
  Constructor. Creates a new simulator
  </summary>
 </member>
-<member name="M:ePuckSim.Simulator.reset">
+<member name="M:robotBox.Simulator.reset">
  <summary>
  Resets the simulator to initial conditions
  </summary>
 </member>
-<member name="M:ePuckSim.Simulator.setCanvas(System.Windows.Forms.Control)">
+<member name="M:robotBox.Simulator.setCanvas(System.Windows.Forms.Control)">
  <summary>
  Sets the canvas
  </summary>
  <param name="c">The control where the images will be rendered</param>
 </member>
-<member name="M:ePuckSim.Simulator.keyboardInteract(System.Windows.Forms.Keys)">
+<member name="M:robotBox.Simulator.keyboardInteract(System.Windows.Forms.Keys)">
  <summary>
  Allows keyboard interaction
  </summary>
  <param name="key">The pressed key</param>
 </member>
-<member name="M:ePuckSim.Simulator.mouseInteract(System.Drawing.Point,System.Int32,System.Windows.Forms.MouseButtons,ePuckSim.Simulator.Tool)">
+<member name="M:robotBox.Simulator.mouseInteract(System.Drawing.Point,System.Int32,System.Windows.Forms.MouseButtons,robotBox.Simulator.Tool)">
  <summary>
  Allows mouse interaction
  </summary>
@@ -49,34 +49,34 @@ ePuckSim
  <param name="button">The pressed button</param>
  <param name="tool">The selected tool</param>
 </member>
-<member name="M:ePuckSim.Simulator.start(System.Int32)">
+<member name="M:robotBox.Simulator.start(System.Int32)">
  <summary>
  Starts the simulator
  </summary>
  <param name="port">The port where the simuator will be listening</param>
 </member>
-<member name="M:ePuckSim.Simulator.stop">
+<member name="M:robotBox.Simulator.stop">
  <summary>
  Stop the simulator
  </summary>
 </member>
-<member name="M:ePuckSim.Simulator.setGrid(System.Int32)">
+<member name="M:robotBox.Simulator.setGrid(System.Int32)">
  <summary>
  Set grid size
  </summary>
  <param name="sz">The grid size</param>
 </member>
-<member name="M:ePuckSim.Simulator.timerTick">
+<member name="M:robotBox.Simulator.timerTick">
  <summary>
  The timer tick handler
  </summary>
 </member>
-<member name="M:ePuckSim.Simulator.serverLoop">
+<member name="M:robotBox.Simulator.serverLoop">
  <summary>
  The server thread handler
  </summary>
 </member>
-<member name="M:ePuckSim.Vector.op_Addition(ePuckSim.Vector,ePuckSim.Vector)">
+<member name="M:robotBox.Vector.op_Addition(robotBox.Vector,robotBox.Vector)">
  <summary>
  Addition
  </summary>
@@ -84,7 +84,7 @@ ePuckSim
  <param name="v2"></param>
  <returns></returns>
 </member>
-<member name="M:ePuckSim.Vector.op_Subtraction(ePuckSim.Vector,ePuckSim.Vector)">
+<member name="M:robotBox.Vector.op_Subtraction(robotBox.Vector,robotBox.Vector)">
  <summary>
  Substraction
  </summary>
@@ -92,7 +92,7 @@ ePuckSim
  <param name="v2"></param>
  <returns></returns>
 </member>
-<member name="M:ePuckSim.Vector.op_Multiply(ePuckSim.Vector,ePuckSim.Vector)">
+<member name="M:robotBox.Vector.op_Multiply(robotBox.Vector,robotBox.Vector)">
  <summary>
  Dot product
  </summary>
@@ -100,7 +100,7 @@ ePuckSim
  <param name="v2"></param>
  <returns></returns>
 </member>
-<member name="M:ePuckSim.Vector.op_Multiply(System.Double,ePuckSim.Vector)">
+<member name="M:robotBox.Vector.op_Multiply(System.Double,robotBox.Vector)">
  <summary>
  Constant prodict
  </summary>
@@ -108,7 +108,7 @@ ePuckSim
  <param name="v"></param>
  <returns></returns>
 </member>
-<member name="M:ePuckSim.Vector.op_Multiply(ePuckSim.Vector,System.Double)">
+<member name="M:robotBox.Vector.op_Multiply(robotBox.Vector,System.Double)">
  <summary>
  Constant product
  </summary>
@@ -116,14 +116,14 @@ ePuckSim
  <param name="k"></param>
  <returns></returns>
 </member>
-<member name="M:ePuckSim.Vector.op_OnesComplement(ePuckSim.Vector)">
+<member name="M:robotBox.Vector.op_OnesComplement(robotBox.Vector)">
  <summary>
  Opposite direction vector
  </summary>
  <param name="v"></param>
  <returns></returns>
 </member>
-<member name="M:ePuckSim.Physics.intersect(System.Drawing.PointF,System.Drawing.PointF,System.Drawing.PointF,System.Double)">
+<member name="M:robotBox.Physics.intersect(System.Drawing.PointF,System.Drawing.PointF,System.Drawing.PointF,System.Double)">
  <summary>
  Check wether a line segment and a circle intersect
  </summary>
@@ -133,7 +133,7 @@ ePuckSim
  <param name="r">The radius of the circle</param>
  <returns></returns>
 </member>
-<member name="M:ePuckSim.Physics.intersectionPoints(System.Drawing.PointF,System.Drawing.PointF,System.Drawing.PointF,System.Double)">
+<member name="M:robotBox.Physics.intersectionPoints(System.Drawing.PointF,System.Drawing.PointF,System.Drawing.PointF,System.Double)">
  <summary>
  Get the intersection points between a line segment and a circle
  </summary>
@@ -143,7 +143,7 @@ ePuckSim
  <param name="r">The radius of the circle</param>
  <returns></returns>
 </member>
-<member name="M:ePuckSim.Physics.intersect(System.Drawing.PointF,System.Drawing.PointF,System.Drawing.PointF,System.Drawing.PointF)">
+<member name="M:robotBox.Physics.intersect(System.Drawing.PointF,System.Drawing.PointF,System.Drawing.PointF,System.Drawing.PointF)">
  <summary>
  Check if 2 lines intersect
  </summary>
@@ -153,7 +153,7 @@ ePuckSim
  <param name="q2"></param>
  <returns></returns>
 </member>
-<member name="M:ePuckSim.Physics.intersectionPoint(System.Drawing.PointF,System.Drawing.PointF,System.Drawing.PointF,System.Drawing.PointF)">
+<member name="M:robotBox.Physics.intersectionPoint(System.Drawing.PointF,System.Drawing.PointF,System.Drawing.PointF,System.Drawing.PointF)">
  <summary>
  Gets the intersection point between 2 lines
  </summary>
@@ -163,133 +163,133 @@ ePuckSim
  <param name="q2">The second line end point</param>
  <returns>The intersection point between the lines</returns>
 </member>
-<member name="T:ePuckSim.My.Resources.Resources">
+<member name="T:robotBox.My.Resources.Resources">
 <summary>
   A strongly-typed resource class, for looking up localized strings, etc.
 </summary>
 </member>
-<member name="P:ePuckSim.My.Resources.Resources.ResourceManager">
+<member name="P:robotBox.My.Resources.Resources.ResourceManager">
 <summary>
   Returns the cached ResourceManager instance used by this class.
 </summary>
 </member>
-<member name="P:ePuckSim.My.Resources.Resources.Culture">
+<member name="P:robotBox.My.Resources.Resources.Culture">
 <summary>
   Overrides the current thread's CurrentUICulture property for all
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
-<member name="P:ePuckSim.My.Resources.Resources.account">
+<member name="P:robotBox.My.Resources.Resources.account">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:ePuckSim.My.Resources.Resources.bug">
+<member name="P:robotBox.My.Resources.Resources.bug">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:ePuckSim.My.Resources.Resources.cancel">
+<member name="P:robotBox.My.Resources.Resources.cancel">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:ePuckSim.My.Resources.Resources.content_save">
+<member name="P:robotBox.My.Resources.Resources.content_save">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:ePuckSim.My.Resources.Resources.cross_road">
+<member name="P:robotBox.My.Resources.Resources.cross_road">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:ePuckSim.My.Resources.Resources.cross_wall">
+<member name="P:robotBox.My.Resources.Resources.cross_wall">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:ePuckSim.My.Resources.Resources.cursor_default_outline">
+<member name="P:robotBox.My.Resources.Resources.cursor_default_outline">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:ePuckSim.My.Resources.Resources.cursor_move">
+<member name="P:robotBox.My.Resources.Resources.cursor_move">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:ePuckSim.My.Resources.Resources.ePuck">
+<member name="P:robotBox.My.Resources.Resources.ePuck">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:ePuckSim.My.Resources.Resources.eraser">
+<member name="P:robotBox.My.Resources.Resources.eraser">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:ePuckSim.My.Resources.Resources.file_outline">
+<member name="P:robotBox.My.Resources.Resources.file_outline">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:ePuckSim.My.Resources.Resources.file_video">
+<member name="P:robotBox.My.Resources.Resources.file_video">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:ePuckSim.My.Resources.Resources.logo_text">
+<member name="P:robotBox.My.Resources.Resources.logo_text">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:ePuckSim.My.Resources.Resources.open_in_app">
+<member name="P:robotBox.My.Resources.Resources.open_in_app">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:ePuckSim.My.Resources.Resources.pause">
+<member name="P:robotBox.My.Resources.Resources.pause">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:ePuckSim.My.Resources.Resources.play">
+<member name="P:robotBox.My.Resources.Resources.play">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:ePuckSim.My.Resources.Resources.record">
+<member name="P:robotBox.My.Resources.Resources.record">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:ePuckSim.My.Resources.Resources.record_rec">
+<member name="P:robotBox.My.Resources.Resources.record_rec">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:ePuckSim.My.Resources.Resources.road">
+<member name="P:robotBox.My.Resources.Resources.road">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:ePuckSim.My.Resources.Resources.robot">
+<member name="P:robotBox.My.Resources.Resources.robot">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:ePuckSim.My.Resources.Resources.rotate_3d">
+<member name="P:robotBox.My.Resources.Resources.rotate_3d">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:ePuckSim.My.Resources.Resources.settings">
+<member name="P:robotBox.My.Resources.Resources.settings">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:ePuckSim.My.Resources.Resources.wall">
+<member name="P:robotBox.My.Resources.Resources.wall">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

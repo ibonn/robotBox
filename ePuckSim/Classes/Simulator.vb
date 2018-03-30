@@ -2,7 +2,7 @@
 Imports System.Net.Sockets
 Imports System.Threading
 Imports System.Text.Encoding
-Imports ePuckSim.Map
+Imports robotBox.Map
 
 Public Class Simulator
 
@@ -42,7 +42,6 @@ Public Class Simulator
     Private recorder As Recorder                            ' The recorder
     Private recording As Boolean                            ' Is the recorder recording?
     Private running As Boolean                              ' Is the simulator running?
-    Private robotViewer As Boolean                          ' Is the robot viewer enabled?
     Private sw As Stopwatch                                 ' Frame rate control stopwatch
     Private drawing As Boolean                              ' Is the user drawing a wall?
     Private drawingPath As Boolean                          ' Is the user drawing a path?
@@ -156,7 +155,6 @@ Public Class Simulator
         recording = False
         running = False
         isDebug = False
-        robotViewer = False
         minRate = settings.minFrameRate
         maxRate = settings.maxFrameRate
         If settings.autoAdjustFrameRate Then
@@ -244,9 +242,6 @@ Public Class Simulator
                 Else
                     RaiseEvent log("Debug mode disabled")
                 End If
-            Case Keys.F1
-                robotViewer = Not robotViewer
-
         End Select
     End Sub
 
@@ -562,11 +557,6 @@ Public Class Simulator
                                          debugFont, Brushes.Black, 0, 0)
             End If
 
-            ' Draw robot viewer
-            If robotViewer Then
-                frameGraphics.DrawImage(robotImg, screensize.Width - robotImg.Width, 0)
-            End If
-
             ' Draw cursor
             frameGraphics.DrawImage(_cursor, mouseLocation.X - _cursor.Width \ 2, mouseLocation.Y - _cursor.Height \ 2)
 
@@ -593,8 +583,6 @@ Public Class Simulator
             End If
 
             If recording Then
-                'Dim recordFrame As New Bitmap(screensize.Width, screensize.Height)
-                'Dim recordGraphics As Graphics = Graphics.FromImage(recordFrame)
                 recordGraphics.Clear(Color.PapayaWhip)
                 recordGraphics.DrawImage(scene, 0, 0)
                 recorder.addFrame(recordFrame)

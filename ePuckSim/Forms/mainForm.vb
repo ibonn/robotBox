@@ -1,21 +1,14 @@
-﻿Imports ePuckSim.Simulator
+﻿Imports robotBox.Simulator
 
 Public Class mainForm
 
+#Region "Arritbutes"
     Private sim As Simulator
-    Private started As Boolean
+    Private started, hasRecorded As Boolean
     Private selectedTool As Tool
+#End Region
 
-    Private Sub updateStatus(message As String)
-        statusLabel.Text = message
-    End Sub
-
-    Private Sub resetToolBar()
-        For Each e As ToolStripButton In toolBar.Items
-            e.Checked = False
-        Next
-    End Sub
-
+#Region "Event handlers"
     Private Sub mainForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' Load settings
         Dim settings As New simulatorSettings
@@ -38,7 +31,6 @@ Public Class mainForm
 
         simulatorMenu.Text = getLang("simulator")
         DebugModeToolStripMenuItem.Text = getLang("toggledebug")
-        ToggleRobotViewerToolStripMenuItem.Text = getLang("togglerobot")
         SettingsToolStripMenuItem.Text = getLang("settings")
         AboutToolStripMenuItem.Text = getLang("about")
 
@@ -55,7 +47,6 @@ Public Class mainForm
         recordButton.Text = getLang("record")
         exportButton.Text = getLang("export")
         exportStatusLabel.Text = getLang("exportmessage")
-        playPauseRecordingButton.Text = getLang("pauserecord")
 
         ' Set values
         portSelector.Text = settings.defaultPort
@@ -63,6 +54,8 @@ Public Class mainForm
         ' Initialize
         canvas.Select()
         started = False
+        hasRecorded = False
+        exportButton.Enabled = False
         Text = Simulator.name
         sim = New Simulator(settings)
 
@@ -88,8 +81,15 @@ Public Class mainForm
     End Sub
 
     Private Sub mainForm_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
+
+        ' Stop the robot
         If started Then
             sim.stop()
+        End If
+
+        ' Delete temporary files
+        If hasRecorded Or sim.isRecording Then
+            sim.stopRecording()
         End If
     End Sub
 
@@ -148,20 +148,8 @@ Public Class mainForm
         sim.keyboardInteract(Keys.F3)
     End Sub
 
-    Private Sub ToggleRobotViewerToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ToggleRobotViewerToolStripMenuItem.Click
+    Private Sub ToggleRobotViewerToolStripMenuItem_Click(sender As Object, e As EventArgs)
         sim.keyboardInteract(Keys.F1)
-    End Sub
-
-    Delegate Sub serverStoppedDelegate()
-    Private Sub serverStopped()
-        If applicationBar.InvokeRequired Then
-            Dim d As New serverStoppedDelegate(AddressOf serverStopped)
-            applicationBar.Invoke(d)
-        Else
-            Dim i As ToolStripButton = applicationBar.Items(4)
-            i.BackColor = Color.Green
-            i.Text = "Start"
-        End If
     End Sub
 
     Private Sub SaveToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SaveToolStripMenuItem.Click
@@ -178,10 +166,6 @@ Public Class mainForm
 
     Private Sub openMapDialog_FileOk(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles openMapDialog.FileOk
         sim.setMap(New Map(openMapDialog.FileName))
-    End Sub
-
-    Private Sub separatorLine_Click(sender As Object, e As EventArgs) Handles separatorLine.Click
-        'MsgBox("Secret message!")
     End Sub
 
     Private Sub eraserTool_Click(sender As Object, e As EventArgs) Handles eraserTool.Click
@@ -216,13 +200,18 @@ Public Class mainForm
         If sim.isRecording Then
             recordButton.Image = My.Resources.record
             recordButton.Text = getLang("record")
-            playPauseRecordingButton.Visible = False
-            sim.stopRecording()
+            sim.pauseRecording()
+            exportButton.Enabled = True
         Else
-            recordButton.Image = My.Resources.record_rec
-            recordButton.Text = getLang("stoprecording")
-            playPauseRecordingButton.Visible = True
-            sim.startRecording()
+            If hasRecorded Then
+                Dim response As MsgBoxResult = MsgBox(getLang("overwritemsg"), MsgBoxStyle.YesNo, getLang("overwritetitle"))
+                If response = MsgBoxResult.Yes Then
+                    sim.stopRecording() ' Reset recorder
+                    record()
+                End If
+            Else
+                record()
+            End If
         End If
     End Sub
 
@@ -232,14 +221,44 @@ Public Class mainForm
 
             ' Disable all controls
             recordButton.Enabled = False
-            playPauseRecordingButton.Enabled = False
             exportButton.Enabled = False
 
             ' Set progressbar value
             exportProgressbar.Style = ProgressBarStyle.Marquee
 
             sim.exportRecording()
+            hasRecorded = False ' File exported
         End If
+    End Sub
+#End Region
+
+    Private Sub updateStatus(message As String)
+        statusLabel.Text = message
+    End Sub
+
+    Private Sub resetToolBar()
+        For Each e As ToolStripButton In toolBar.Items
+            e.Checked = False
+        Next
+    End Sub
+
+    Delegate Sub serverStoppedDelegate()
+    Private Sub serverStopped()
+        If applicationBar.InvokeRequired Then
+            Dim d As New serverStoppedDelegate(AddressOf serverStopped)
+            applicationBar.Invoke(d)
+        Else
+            Dim i As ToolStripButton = applicationBar.Items(4)
+            i.BackColor = Color.Green
+            i.Text = "Start"
+        End If
+    End Sub
+
+    Private Sub record()
+        recordButton.Image = My.Resources.record_rec
+        recordButton.Text = getLang("stoprecording")
+        sim.startRecording()
+        hasRecorded = True
     End Sub
 
     Delegate Sub exportFinishedDelegate()
@@ -251,21 +270,8 @@ Public Class mainForm
             exportProgressbar.Style = ProgressBarStyle.Continuous
 
             recordButton.Enabled = True
-            playPauseRecordingButton.Enabled = True
-            exportButton.Enabled = True
+            exportButton.Enabled = False
             exportStatusLabel.Text = getLang("videoexported")
-        End If
-    End Sub
-
-    Private Sub playPauseRecordingButton_Click(sender As Object, e As EventArgs) Handles playPauseRecordingButton.Click
-        If sim.isRecording Then
-            sim.pauseRecording()
-            playPauseRecordingButton.Image = My.Resources.play
-            playPauseRecordingButton.Text = getLang("resumerecord")
-        Else
-            sim.resumeRecording()
-            playPauseRecordingButton.Image = My.Resources.pause
-            playPauseRecordingButton.Text = getLang("pauserecord")
         End If
     End Sub
 End Class

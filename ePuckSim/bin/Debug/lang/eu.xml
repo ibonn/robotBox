@@ -43,4 +43,6 @@
 	<param name="videoexported">Bideoa sortu egin da.</param>
 	<param name="ffmpeglocation">ffmpeg-ren kokalekua:</param>
 	<param name="browse">Arakatu</param>
+	<param name="overwritemsg">Grabaketa bat hasi da, baina ez da bideoa sortu. Grabaketa berri bat hasi nahi duzu?</param>
+	<param name="overwritetitle">Grabaketa berria</param>
 </lang>

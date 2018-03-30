@@ -43,4 +43,6 @@
 	<param name="videoexported">Video exported.</param>
 	<param name="ffmpeglocation">ffmpeg location:</param>
 	<param name="browse">Browse</param>
+	<param name="overwritemsg">A recording has been started, but it hasn't been exported. Do you want to record?</param>
+	<param name="overwritetitle">Overwrite recording</param>
 </lang>
