@@ -10,18 +10,20 @@ robotBox is a 2D robot simulator for Windows
 * Export simulations to video (requires ffmpeg)
 * Multiple languages
 * Collision detection
-![Collision example](example_gifs/collision_detection.gif)
 * Edit the map in real time while the simulation is running
+
+![Collision example](example_gifs/collision_detection.gif)
 
 ## Supported robots
 * ePuck
 	* Proximity sensors
-	![Proximity sensors example](example_gifs/proximity_sensors.gif)
 	* Floor sensors
-	![Floor sensors example](example_gifs/floor_sensors.gif)
 	* Wheel motors
 	* Leds
 	* Wheel encoders
+	
+![Proximity sensors example](example_gifs/proximity_sensors.gif)
+![Floor sensors example](example_gifs/floor_sensors.gif)
 
 ## System requirements
 * .NET Framework 4.0 or higher
