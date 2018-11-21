@@ -1,0 +1,19 @@
+﻿<Properties StartupConfiguration="{1F83305C-42B7-49F7-8270-74505B0F0486}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ePuckSim/Classes/Physics.vb">
+    <Files>
+      <File FileName="ePuckSim/Classes/Map.vb" Line="1" Column="1" />
+      <File FileName="ePuckSim/Classes/Physics.vb" Line="11" Column="38" />
+      <File FileName="ePuckSim/Classes/Recorder.vb" Line="1" Column="1" />
+      <File FileName="ePuckSim/Classes/Robot.vb" Line="1" Column="1" />
+      <File FileName="ePuckSim/Classes/Simulator.vb" Line="1" Column="1" />
+      <File FileName="ePuckSim/Classes/Vector.vb" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.robotBox PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

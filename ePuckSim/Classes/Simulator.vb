@@ -627,7 +627,7 @@ Public Class Simulator
                 messageParts = message.Split(",")
                 Select Case messageParts(0)
 ' MISC
-                    Case ""     ' Null message
+                    Case ""     ' Empty message
                         ' Ignore the message
                     Case "R"    ' Reset robot
                         response &= "z,Command not found\r\nz,Command not found\r\n"
@@ -636,13 +636,14 @@ Public Class Simulator
                         response &= "s\r\n"
 
                     Case "v"    ' Get sercom version (epuck firmware version)
-                        ' Ignore the message
+                        ' Not implemented. Should let the user choose the version and output it here
 ' GET
                     Case "a"    ' Get nonfiltered accelerometer
-                        ' Ignore the message
+                        ' Not implemented
 
                     Case "A"    ' Get filtered accelerometer
-                        ' Ignore the message
+                        ' Not implemented
+
                     Case "N"    ' Get proximity sensors
                         response = String.Join(",", map.robot.getProximity()) & "\r\n"
 
@@ -654,16 +655,16 @@ Public Class Simulator
                         response = String.Join(",", map.robot.getMotorPositions()) & "\r\n"
 
                     Case "O"    ' Get light sensors
-                        ' Ignore the message
+                        ' Not implemented
 
                     Case "u"    ' Get micorophones
-                        ' Ignore the message
+                        ' Not implemented
 
                     Case "E"    ' Get motor speeds
                         response = String.Join(",", map.robot.getMotorSpeeds()) & "\r\n"
 
                     Case "I"    ' Get camera
-                        ' Ignore the message
+                        ' Not implemented. Difficult to implement in a 2D simulator
 ' SET
                     Case "D"    ' Set motors speed
                         map.robot.setMotorsSpeed(messageParts(1), messageParts(2))
@@ -678,7 +679,7 @@ Public Class Simulator
                         map.robot.setSound(messageParts(1))
 
                     Case "J"    ' Set camera parameters
-                        ' Ignore the message
+                        ' Not implemented
 
                     Case Else
                         response &= "z,Command not found\r\n"
