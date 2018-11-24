@@ -39,3 +39,17 @@ E:\Proyectos\robotBox\ePuckSim\obj\Debug\robotBox.vbproj.CoreCompileInputs.cache
 E:\Proyectos\robotBox\ePuckSim\obj\Debug\robotBox.exe
 E:\Proyectos\robotBox\ePuckSim\obj\Debug\robotBox.xml
 E:\Proyectos\robotBox\ePuckSim\obj\Debug\robotBox.pdb
+E:\Proyectos\Originales\robotBox\ePuckSim\bin\Debug\robotBox.exe.config
+E:\Proyectos\Originales\robotBox\ePuckSim\bin\Debug\robotBox.exe
+E:\Proyectos\Originales\robotBox\ePuckSim\bin\Debug\robotBox.pdb
+E:\Proyectos\Originales\robotBox\ePuckSim\bin\Debug\robotBox.xml
+E:\Proyectos\Originales\robotBox\ePuckSim\obj\Debug\robotBox.vbprojAssemblyReference.cache
+E:\Proyectos\Originales\robotBox\ePuckSim\obj\Debug\robotBox.aboutForm.resources
+E:\Proyectos\Originales\robotBox\ePuckSim\obj\Debug\robotBox.mainForm.resources
+E:\Proyectos\Originales\robotBox\ePuckSim\obj\Debug\robotBox.settingsForm.resources
+E:\Proyectos\Originales\robotBox\ePuckSim\obj\Debug\robotBox.Resources.resources
+E:\Proyectos\Originales\robotBox\ePuckSim\obj\Debug\robotBox.vbproj.GenerateResource.cache
+E:\Proyectos\Originales\robotBox\ePuckSim\obj\Debug\robotBox.vbproj.CoreCompileInputs.cache
+E:\Proyectos\Originales\robotBox\ePuckSim\obj\Debug\robotBox.exe
+E:\Proyectos\Originales\robotBox\ePuckSim\obj\Debug\robotBox.xml
+E:\Proyectos\Originales\robotBox\ePuckSim\obj\Debug\robotBox.pdb
